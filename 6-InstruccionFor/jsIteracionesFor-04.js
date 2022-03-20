@@ -1,7 +1,13 @@
 function mostrar()
 {
-	alert("ok");
+	var i;
 
-
-
-}//FIN DE LA FUNCIÓN
+	for(i = 0; i < 100 ; i++)
+	{
+		console.log(i);
+		if (i == 7)
+		{
+			break;
+		}
+	}
+}

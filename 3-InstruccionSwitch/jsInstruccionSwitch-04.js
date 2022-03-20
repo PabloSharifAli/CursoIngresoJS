@@ -1,11 +1,27 @@
 function mostrar()
 {
-	//tomo el mes
-	var mesDelAño =txtIdMes.value;
-	alert(mesDelAño);
-	
-	
+    var mesDelAño;
 
+    mesDelAño = document.getElementById("txtIdMes").value;
 
-
-}//FIN DE LA FUNCIÓN
+    switch (mesDelAño) {
+        case "Febrero":
+            alert("Tiene 28 días");
+            break;
+        case "Abril":
+        case "Junio":
+        case "Septiembre":
+        case "Noviembre":
+            alert("Tiene 30 días");
+            break;
+        case "Enero":
+        case "Marzo":
+        case "Mayo":
+        case "Julio":
+        case "Agosto":
+        case "Octubre":
+        case "Diciembre":
+            alert("Tiene 31 días");
+            break;
+    }
+}
